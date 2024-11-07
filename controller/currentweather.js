@@ -18,7 +18,7 @@ exports.getlocation = async (req, res) => {
                 statecode,
                 countrycode,
             }
-            const limit = 5
+            const limit = 5 
 
             const APIKEY = process.env.CURRENTWEATHERAPI;
             if (!APIKEY) {
@@ -26,6 +26,7 @@ exports.getlocation = async (req, res) => {
             }
           
             console.log('Request body:', req.body);
+   
 
 
             const geourl = "https://api.openweathermap.org/geo/1.0/direct"
