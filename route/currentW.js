@@ -1,5 +1,5 @@
 const currentwether = require('../controller/currentweather')
-const geocode = require('../controller/geocoding')
+
 const express = require('express')
 const route = express.Router()
 
