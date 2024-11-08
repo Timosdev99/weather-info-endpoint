@@ -25,7 +25,7 @@ exports.getlocation = async (req, res) => {
             params: {
                 q: `${city},${country}${countrycode ? ',' + countrycode : ''}`,
                 limit: 5,
-                appid: APIKEY
+                appid: APIKEY   
             }
         });
 
@@ -37,7 +37,7 @@ exports.getlocation = async (req, res) => {
                 message: "Location not found. Please check city and country names."
             });
         }
-
+     
         const lat = geodata[0].lat;
         const lon = geodata[0].lon;
 
