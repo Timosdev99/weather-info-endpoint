@@ -48,7 +48,7 @@ exports.getlocation = async (req, res) => {
                 lat: lat,
                 lon: lon,
                 appid: APIKEY
-            }
+            } 
         });
 
         return res.status(200).json({
